@@ -61,6 +61,7 @@ function updateBook(event){
     bookList[index] = data
     renderData()
     event.target.querySelector("button").click()
+    validateInput()
 }
 renderData()
 function deleteBook(index){

@@ -80,6 +80,11 @@
         .table{
             text-align: center;
         }
+        p{
+            color: red;
+            display: none;
+            margin-left: 320px;
+        }
         
     </style>
 </head>
@@ -89,12 +94,16 @@
     <form onsubmit="addBook(event)">
         <label for="name">Tên sách:</label>
         <input required class="input1" type="text" name="name"><br><br>
+        <p>không được bỏ trống</p>
         <label for="name">Tác giả: </label>
         <input required class="input2" type="text" name="author"><br><br>
+        <p>không được bỏ trống</p>
         <label for="name">Năm xuất bản: </label>
         <input required class="input3" type="text" name="year"><br><br>
+        <p>không được bỏ trống</p>
         <label for="name">Thể loại: </label>
         <input required class="input4" type="text" name="category"><br><br>
+        <p>không được bỏ trống</p>
         <button class="add" type="submit" >Thêm sách</button><br>
     </form>
     <br><input type="text" id="ip_search" onclick="searchBook()" placeholder="Tìm kiếm theo tên sách..."><br>
